@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rusting as a student - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="./sophomore_rust.html" class="active"><strong>1.</strong> Rusting as a student</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <a class="header" href="./sophomore_rust.html#rust-for-2018-student-edition" id="rust-for-2018-student-edition"><h1>Rust for 2018, Student Edition</h1></a>
+<p>At the request of the Rust team, the community was tasked with writing blog posts talking about the future and history of rust as it would pertain to improving the language in 2018. I thought I'd take the opportunity to finally begin writing, since it seems like blogging is all the rage nowadays.</p>
+<p>In reading everyone else's posts, I've noticed that it seems that the majority of people are already well established in the world of software. In contrast, I'm a sophomore in college that stumbled upon Rust and fell in love with it, and I wanted to share my thoughts and (brief) experience with that as the focus.</p>
+<a class="header" href="./sophomore_rust.html#getting-into-rust-as-a-student" id="getting-into-rust-as-a-student"><h2>Getting into Rust as a Student</h2></a>
+<p>One of the larger hurdles that I faced getting into Rust is that becoming productive in the language involves reading a whole book, and then some. While this is not a bad thing, it means that up front adoption particularly from students who are relatively new (like myself), is a significant time commitment, when oftentimes we're just looking to hack away to build something pretty simple.</p>
+<p>One of the powerful draws of languages like Python and Javascript, is that there are so dang many tutorials to do stuff that is probably obvious to anyone with moderate domain experience. Medium is rife with articles like setting up a web server in python, or implementing a blockchain in 200 lines of javascript, that make it incredibly convenient for students to get up and running with something that is approximately what they wanted to do in the first place.</p>
+<p>Even if they feel kind of silly, I'd like to encourage anyone building hobby web servers/gui applications/cli's/etc to document their endeavor, and write a small tutorial to get started on working on a project in that domain. Who knows, you may just inspire someone to try Rust :)</p>
+<a class="header" href="./sophomore_rust.html#my-personal-rust-related-goals" id="my-personal-rust-related-goals"><h2>My Personal (Rust Related) Goals</h2></a>
+<p>I would love to improve accessibility for Rust for students, and in part I'd like to do that by writing some of the aforementioned guides and tutorials to help other newcomers get productive with Rust, quickly.</p>
+<p>Second, I'd really like to focus more on writing small, open source crates to improve my capacity with Rust, and fill the gap of many of the conveniences that more mature languages may have. This could be API wrappers, boilerplates, and other things that help build the case for Rust as a language for almost any purpose, from hacking prototypes to full production systems.</p>
+<a class="header" href="./sophomore_rust.html#finally-a-word-of-thank-you" id="finally-a-word-of-thank-you"><h2>Finally, a word of thank you</h2></a>
+<p>I've drifted around the communities of a couple programming languages (go, javascript / react, and python), and none of them have even come close to the level of energy, positivity, and inclusivity that exists in the Rust community, particularly as someone getting started. Hell, on my first day working with Rust, I wandered onto the IRC channel and was personally welcomed to Rust by Steve Klabnik (if you're reading this, hi &lt;3). It has been such an inspiration to see so many people from the community who work seemingly tirelessly to move Rust forward in so many directions at once, and it is so incredibly impressive and I aspire to reach that caliber someday. So, thank you to all the rust community for your positivity, warmness, and inspiration for me to continually improve and create :)</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+
+                
+
+            </div>
+
+            
+
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>
